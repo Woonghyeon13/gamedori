@@ -2,25 +2,29 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-	<head>
-		<!--파비콘-->
-		<link href="/images/f.png" rel="shortcut icon">
-
-		<!-- 부트스트랩 -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-
-		<!-- 스타일 시트 연결 -->
-		<link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
+	<!-- 부트스트랩 -->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 	
-		<!-- 폰트 -->
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+			<!-- 스타일 시트 연결 -->
+			<link href="<%=request.getContextPath()%>/resources/css/reset.css" rel="stylesheet">
+			<link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
 		
+			 <!--자바스크립트-->
+			<script src="<%=request.getContextPath()%>/resources/js/script.js"></script>
+			
+			<!-- 부트스트랩 -->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+			
+			<!-- 폰트 -->
+			<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 		
-		<!--제이쿼리-->
-		<script src="<%=request.getContextPath()%>/resources/js/jquery-3.6.1.min.js"></script>
-	
+			<!--jquery-->
+			<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+		
 		
 		<script>
 	 	function checkID()
@@ -67,7 +71,6 @@
 				}			
 			}); // end ajax
 			
-	 		
 		}
 	 // 인증번호 비교 
 		// blur -> focus가 벗어나는 경우 발생
@@ -86,6 +89,47 @@
 				$resultMsg.css('color','red');
 			}
 		});
+		
+		
+		
+		function checkPhone()
+		{
+	 		
+	 		var contextPath = '<%=request.getContextPath()%>';
+	 		const phone = $('#MEMBER_PHONE').val() ; // 이메일 주소값 얻어오기!
+			console.log('휴대폰 번호 : ' + phone); // 이메일 오는지 확인
+			const checkInput = $('.phone-check-input') // 인증번호 입력하는곳 
+			
+			$.ajax({
+				type : 'get',
+				url : contextPath+"/user/PhoneCheck.do?member_phone="+phone, // GET방식이라 Url 뒤에 email을 뭍힐수있다.
+				success : function (data) {
+					console.log("data : " +  data);
+					checkInput.attr('disabled',false);
+					code =data;
+					alert('인증번호가 전송되었습니다.')
+				}			
+			}); // end ajax
+			
+	 		
+		}
+		
+		
+		$('.phone-check-input').blur(function () {
+			const inputCode = $(this).val();
+			const $resultMsg = $('#phone-check-warn');
+			
+			if(inputCode === code){
+				$resultMsg.html('인증번호가 일치합니다.');
+				$resultMsg.css('color','green');
+				$('#phone-Check-Btn').attr('disabled',true);
+				$('#MEMBER_PHONE').attr('readonly',true);
+				
+			}else{
+				$resultMsg.html('인증번호가 불일치 합니다. 다시 확인해주세요!.');
+				$resultMsg.css('color','red');
+			}
+		});
 	 	
 	 
 			
@@ -94,67 +138,176 @@
 	
 	</head>
 	<body>
-
-		<div id="top"></div>
-		<header class="p-3">
-			<div class="container">
-			  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-				<a href="../home.do" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+<header class="pt-4 pb-3 border-bottom border-2 mb-5">
+		<div class="container">
+			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+				<a href="#" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
 					GAMEDORI
-				  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
 				</a>
+				
+				<div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+				</div>
 		
-				<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				</ul>
-		
-				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-				  <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 text-end" role="search">
+					<input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
 				</form>
 		
 				<div class="text-end">
-				  <button type="button" class="btn btn-outline-light login">Login</button>
-				  <button type="button" class="btn btn-outline-dark ">Sign-up</button>
+					<ul class="d-flex flex-row mb-0 ps-0">
+						<li><button type="button" class="btn btn-outline-light login me-2" data-bs-toggle="modal" data-bs-target="#login">로그인</button></li>
+						<li> <button type="button" onclick="location.href='join.do'" class="btn btn-outline-dark ">회원가입</button></li>
+						<li><a href="#" class="nav-link me-2 mt-1 text-muted" title="장바구니"><i class="xi-cart-o xi-2x"></i></a></li>
+						<li><a href="#" class="nav-link mt-1 text-muted" title="찜 목록"><i class="xi-heart-o xi-2x jjim"></i></a></li>
+					</ul>
 				</div>
-	
-		  </header><!--End:header-->
-		  
-		  <div class="px-2 py-1">
-			<div class="container">
-			  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-				<a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none">
-				  <svg class="bi me-2" width="40" height="32" role="img" aria-label="부트스트랩" _mstaria-label="138918" _mstHash="63"><use xlink:href="#bootstrap"></use></svg>
-				</a>
-	  
-				<ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-				  <li class="me-2">
-					<button type="button" class="btn btn-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-							<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
-							<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
-						</svg>
-						마이페이지
-					  </button>
-				  </li>
-				  <li class="me-2">
-					<button type="button" class="btn btn-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-							<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-						</svg>
-						장바구니
-					</button>
-				  </li>
-				  <li>
-					<button type="button" class="btn btn-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
-							<path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"></path>
-						</svg>
-						주문배송
-					  </button>
-				  </li>
-				</ul>
-			  </div>
 			</div>
-		  </div>
+		</div>
+
+		<div class="container">
+			<div class="d-flex justify-content-center py-3">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="#" class="nav-link" style="color: black;">새로운상품</a></li>
+					<li class="nav-item"><a href="#" class="nav-link" style="color: black;">예약판매</a></li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">닌텐도 Switch</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+							<li><a class="dropdown-item mt-1" type="button">아미보</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">PlayStation 5</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">PlayStation 4</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">XBOX Series</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">GOODS</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">피규어</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="#" class="nav-link" style="color: black;">고객지원</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--모달 로그인--------------------------------------------------------------------------------------->
+		<div class="modal" tabindex="-1" id="login">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="d-flex justify-content-end mt-3 me-3">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="">
+						<p class="text-center" id="logo">GAMEDORI</p>
+					</div>
+					<div class="modal-body">
+						<form>
+							<table>
+								<tr>
+									<td style="width: 500px;">
+										<h5 style="margin-left: 200px; margin-top: 20px; font-weight: bold;">로그인</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="mb-3">
+											<input style="margin-top: 20px;"type="email" class="form-control" id="email" name="email" placeholder="이메일을 입력하세요">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력하세요">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-outline-light login" style="width: 460px; margin-top: 30px; font-weight: bold; font-size: 20px;">로그인</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center; margin-top: 20px; font-size: 18px; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#findPW">비밀번호를 잊어버리셨나요?</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center; font-size: 18px;"><a href="join.do">계정이 없으신가요? 회원가입</a></p>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				  </div>
+			</div>
+		</div>
+
+		<!--모달 비밀번호 찾기 ------------------------------------------------------------------------------------->
+		<div class="modal" tabindex="-1" id="findPW">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="d-flex justify-content-end mt-3 me-3">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="">
+						<p class="text-center" id="logo">GAMEDORI</p>
+					</div>
+					<div class="modal-body">
+						<form>
+							<table>
+								<tr>
+									<td style="width: 500px;">
+										<h5 style="margin-left: 170px; margin-top: 20px; font-weight: bold;">비밀번호 찾기</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center;">가입했던 이메일을 적어주세요. <br>입력하신 이메일 주소로 비밀번호 변경 메일을 보내드릴게요.</p>
+									</td>
+								</tr>
+								<tr>	
+									<td >
+										<div class="mb-3">
+											<input style="margin-top: 20px;"type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-outline-light login" style="width: 460px; margin-top: 15px; font-weight: bold; font-size: 20px;">이메일 보내기</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center; margin-top: 20px; font-size: 18px; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#login">로그인하러 가기</p>
+									</td>		
+								</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+			</header>  
+
 
 		<main>
 			
@@ -192,6 +345,7 @@
 								<input type="text" class="form-control" name="userEmail1" id="userEmail1" placeholder="이메일" >
 							
 								<button onclick="checkID()" class="btn btn-outline-secondary"  type="button" id="MEMBER_EMAIL">중복체크</button>
+								<button type="button" onclick="checkEamil()" class="btn btn-primary" id="mail-Check-Btn">본인인증</button>
 								<div class="invalid-feedback">
 									이메일을 입력해주세요.
 								</div>
@@ -236,14 +390,25 @@
 
 					  </div>
 
-					  <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">휴대전화</label>
-                        <div class="input-group">
-                            <input type="text"  name="phone" id="phone"  class="form-control"aria-label="Recipient's username" aria-describedby="button-addon2" required>
-                         
-                          </div>
-                        
-						</div> 
+					 <div class="mb-4">
+							<label for="MEMBER_PHONE" class="form-label fw-bold fs-6">휴대전화</label>
+								<div class="input-group mb-3">
+								<input type="text" class="form-control" name="MEMBER_PHONE" id="MEMBER_PHONE" placeholder="휴대폰" >
+							
+								<button onclick="checkPhone()" class="btn btn-outline-secondary"  type="button" id="phone1">휴대폰 본인인증</button>
+								<div class="invalid-feedback">
+									휴대 번호를 입력해주세요.
+								</div>
+							</div>
+							
+							<div class="mail-check-box">
+								<input class="form-control phone-check-input" placeholder="인증번호 6자리를 입력해주세요!" disabled="disabled" maxlength="6">
+								</div>
+								<span id="phone-check-warn"></span>
+							</div>
+					</div>
+						
+							
 
 
 						<!-- 주소검색 api -->
@@ -321,6 +486,8 @@
 				</div>
 			</div>
 		
+
+				
 
 
 			  <script>

@@ -54,18 +54,63 @@
 				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 text-end" role="search">
 					<input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
 				</form>
+		
 				<div class="text-end">
 					<ul class="d-flex flex-row mb-0 ps-0">
-						<li><button type="button" class="btn btn-outline-light login" data-bs-toggle="modal" data-bs-target="#myModal">로그인</button></li>
+						<li><button type="button" class="btn btn-outline-light login me-2" data-bs-toggle="modal" data-bs-target="#login">로그인</button></li>
 						<li> <button type="button" onclick="location.href='user/join.do'" class="btn btn-outline-dark ">회원가입</button></li>
 						<li><a href="#" class="nav-link me-2 mt-1 text-muted" title="장바구니"><i class="xi-cart-o xi-2x"></i></a></li>
-						<li><a href="#" class="nav-link mt-1 text-muted" title="찜 목록""><i class="xi-heart-o xi-2x jjim"></i></a></li>
+						<li><a href="#" class="nav-link mt-1 text-muted" title="찜 목록"><i class="xi-heart-o xi-2x jjim"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-				
-				<!--모달 로그인--------------------------------------------------------------------------------------->
+
+		<div class="container">
+			<div class="d-flex justify-content-center py-3">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="#" class="nav-link" style="color: black;">새로운상품</a></li>
+					<li class="nav-item"><a href="#" class="nav-link" style="color: black;">예약판매</a></li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">닌텐도 Switch</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+							<li><a class="dropdown-item mt-1" type="button">아미보</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">PlayStation 5</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">PlayStation 4</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">XBOX Series</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">하드웨어</a></li>
+							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
+							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">GOODS</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" type="button">피규어</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="#" class="nav-link" style="color: black;">고객지원</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--모달 로그인--------------------------------------------------------------------------------------->
 		<div class="modal" tabindex="-1" id="login">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -107,7 +152,7 @@
 								</tr>
 								<tr>
 									<td>
-										<p style="text-align: center; font-size: 18px;"><a href=#>계정이 없으신가요? 회원가입.</a></p>
+										<p style="text-align: center; font-size: 18px;"><a href="user/join.do">계정이 없으신가요? 회원가입</a></p>
 									</td>
 								</tr>
 							</table>
@@ -157,13 +202,14 @@
 										<p style="text-align: center; margin-top: 20px; font-size: 18px; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#login">로그인하러 가기</p>
 									</td>		
 								</tr>
-							</table>
-						</form>
+									</table>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>				
-		  </header><!--End:header-->
+		
+			</header>  
 		  
 		  <div class="px-2 py-1">
 			<div class="container">

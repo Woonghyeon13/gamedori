@@ -32,6 +32,15 @@ public class UserController {
 		return "user/join";
 	}
 	
+	@RequestMapping(value = "/join.do", method = RequestMethod.POST)
+	public String join( Model model , MEMBER_VO MemberVO) {
+		MEMBER_VO vo = MemberService.selectByBno(1);
+		model.addAttribute("vo", vo);
+	
+		return "user/join";
+	}
+	
+	
 	@RequestMapping(value = "/mypage.do", method = RequestMethod.GET)
 	public String mypage() {
 
@@ -60,11 +69,22 @@ public class UserController {
 	{
 		System.out.println("이메일 인증 요청이 들어옴!");
 		System.out.println("이메일 인증 이메일 : " + memberVO.getMember_email());
-		MemberService.updateMailAuth(memberVO);
+		
 		
 		return "/user/join";
 		
 	}
-
+	
+	
+	@RequestMapping(value = "/PhoneCheck.do")
+	public String PhoneConfirm(MEMBER_VO memberVO) throws Exception
+	{
+		System.out.println("휴대폰 인증 요청이 들어옴!");
+		System.out.println("휴대폰 인증 요청 번호 : " + memberVO.getMember_phone());
+		
+		
+		return "/user/join";
+		
+	}
 	
 }
