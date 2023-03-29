@@ -1,0 +1,62 @@
+
+
+li{list-style: none;}
+a{text-decoration: none;}
+
+html li {
+        font-family: "Noto Sans KR", sans-serif;
+}
+html a {
+         font-family: "Noto Sans KR", sans-serif;
+         text-decoration-line: none;
+}
+html p{
+        font-family: "Noto Sans KR", sans-serif;
+} 
+    
+#mypage_inner{border:5px solid #000; margin:0 auto;}
+#mypage_inner h2{padding:20px;}
+
+#mypage_1{border:5px solid #000; margin:10px 30px;}
+#mypage_1 h3{font-weight: bold;}
+#mypage_1 ul{display:flex; padding-top:20px;}
+#mypage_1 li{border-right:1px solid gray; 
+        float: left; width:24%; margin:0 1%; font-size: 20px; font-weight: bold; }
+#mypage_1 li:nth-child(4){border-right:0px;}
+#mypage_1 p{font-size:15px; color:#000;}
+#mypage_1 a{font-size:10px; color:gray; font-style:none;}
+
+#mypage_list span{font-size:20px; font-weight: bold;}
+#mypage_list li{margin:10px 50px;}
+
+#nickname{padding:20px 50px;}
+
+#ol_li a{color:#192773}
+
+table th,td{text-align: center;}
+
+#mypage_inner2{display:flex;  margin-top:30px;}
+
+#detail_inner div{margin-top:30px;}
+
+#product_page p:first-child{float:left; font-size:15px; font-weight: bold;}
+#product_page p:last-child{float:right; font-size:13px; color:gray;}
+#product{clear:both; border:1px solid #000;}
+#breakdown1{text-align: center;} 
+
+
+#enquiry_page p:first-child{float:left; font-size:15px; font-weight: bold;}
+#enquiry_page p:last-child{float:right; font-size:13px; color:gray;}
+#enquiry{clear:both; border:1px solid #000;}
+#breakdown2{text-align: center;}
+
+#one_to_one_page p:first-child{float:left; font-size:15px; font-weight: bold;}
+#one_to_one_page p:last-child{float:right; font-size:13px; color:gray;}
+#one_to_one{clear:both; border:1px solid #000;}
+#breakdown3{text-align: center;}
+
+#review_page p:first-child{float:left; font-size:15px; font-weight: bold;}
+#review_page p:last-child{float:right; font-size:13px; color:gray;}
+#review{clear:both; border:1px solid #000;}
+#breakdown4{text-align: center;}
+

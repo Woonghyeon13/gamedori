@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="game.dori.mapper.MemberMapper">
+
+	 <select id="selectByBno" resultType="MemberVO" parameterType="int">
+	 	select *
+	 	from member_tb
+	 	where member_idx = #{member_idx}
+	 </select>
+	
+	<select id="selectbyID" resultType="int" parameterType="String">
+	 	select COUNT(*)
+	 	from member_tb
+	 	where MEMBER_EMAIL = #{value}
+	 </select>
+	 
+	 <update id = "updateMailKey" parameterType="MemberVO">
+	 	update member_tb set mail_key=#{mail_key} where MEMBER_EMAIL=#{member_email}
+	 </update>
+	 
+	 <update id ="updateMailAuth" parameterType="MemberVO">
+	 	update member_tb set mail_auth=1 where MEMBER_EMAIL=#{member_email} and 
+	 	mail_key=#{mail_key}
+	 </update>
+	 
+	 <select id="emailAuthFail" parameterType="String" resultType="int">
+	 	select count(*) from member_tb where MEMBER_EMAIL=#{member_email} and mail_auth=1
+	 </select>
+
+</mapper>
+

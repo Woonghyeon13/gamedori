@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0/EN"
+				"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<typeAliases>
+        
+        <!--  vo 별칭 정보 -->
+        
+        <typeAlias type="game.dori.vo.MEMBER_VO" alias = "MemberVO"/>
+        <typeAlias type="game.dori.vo.LEVEL_VO" alias = "LevelVO"/>
+        <typeAlias type="game.dori.vo.ADDRESS_VO" alias = "AddressVO"/>
+        <typeAlias type="game.dori.vo.CART_VO" alias = "CartVO"/>
+        <typeAlias type="game.dori.vo.CATEGORY_VO" alias = "CategoryVO"/>
+        <typeAlias type="game.dori.vo.DEL_VO" alias = "DelVO"/>
+        <typeAlias type="game.dori.vo.NOTICE_VO" alias = "NoticeVO"/>
+        <typeAlias type="game.dori.vo.ORDER_DETAIL_VO" alias = "Order_deleteVO"/>
+        <typeAlias type="game.dori.vo.ORDER_VO" alias = "OrderVO"/>
+        <typeAlias type="game.dori.vo.PAY_VO" alias = "PayVO"/>
+        <typeAlias type="game.dori.vo.POINT_USED_VO" alias = "Point_usedVO"/>
+        <typeAlias type="game.dori.vo.PRODUCT_A_VO" alias = "Product_a_VO"/>
+        <typeAlias type="game.dori.vo.PRODUCT_IMG_VO" alias = "Product_image_VO"/>
+        <typeAlias type="game.dori.vo.PRODUCT_Q_VO" alias = "Product_q_VO"/>
+        <typeAlias type="game.dori.vo.PRODUCT_VO" alias = "ProductVO"/>
+        <typeAlias type="game.dori.vo.QA_A_VO" alias = "Qa_a_VO"/>
+        <typeAlias type="game.dori.vo.QA_VO" alias = "QaVO"/>
+        <typeAlias type="game.dori.vo.REFUND_VO" alias = "RefundVO"/>
+        <typeAlias type="game.dori.vo.REVIEW_VO" alias = "ReviewVO"/>
+        <typeAlias type="game.dori.vo.SAVEPOINT_VO" alias = "SavepointVO"/>
+        <typeAlias type="game.dori.vo.USEPOINT_VO" alias = "UserpointVO"/>
+        <typeAlias type="game.dori.vo.WISHLIST_VO" alias = "WishlistVO"/>
+    </typeAliases>
+
+
+</configuration>
