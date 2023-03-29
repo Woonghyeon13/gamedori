@@ -66,91 +66,103 @@
 		</div>
 				
 				<!--모달 로그인--------------------------------------------------------------------------------------->
-				<div class="modal" tabindex="-1" id="myModal">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" style="font-size: 40px; margin-left: 30%;">GAMEDORI</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<form>
-									<table>
-										<tr>
-											<td style="width: 500px;"><h5  style="margin-left: 200px;
-											margin-top: 20px; font-weight: bold;">로그인</h5></td>
-										</tr>
-										<tr>
-											<td >
-												<div class="mb-3">
-												<input  style="margin-top: 20px;"type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
-											</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<input style="margin-top: 20px;" type="password" class="form-control" id="password" placeholder="비밀번호를 입력하세요">
-											</td>
-										</tr>
-										<tr>
-											<td><button type="button" class="btn btn-info" style="width: 460px; margin-top: 40px;" >로그인</button></td>
-										</tr>
-										<tr>
-											<td><p style="text-align: center; margin-top: 20px;">		
-												<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#myModal1">비밀번호를 잊어버리셨나요?</button>
-												</p>
-											</td>		
-										</tr>
-										<tr>
-											<td><p style="text-align: center; margin-top: 20px;">		
-												<button type="button" class="btn btn-light" onclick="location.href='user/join.do'">계정이 없으신가요? 회원가입</button>
-												</p>
-											</td>
-										</tr>
-									</table>
-								</form>
-							</div>
-					  	</div>
+		<div class="modal" tabindex="-1" id="login">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="d-flex justify-content-end mt-3 me-3">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
+					<div class="">
+						<p class="text-center" id="logo">GAMEDORI</p>
 					</div>
+					<div class="modal-body">
+						<form>
+							<table>
+								<tr>
+									<td style="width: 500px;">
+										<h5 style="margin-left: 200px; margin-top: 20px; font-weight: bold;">로그인</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="mb-3">
+											<input style="margin-top: 20px;"type="email" class="form-control" id="email" name="email" placeholder="이메일을 입력하세요">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력하세요">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-outline-light login" style="width: 460px; margin-top: 30px; font-weight: bold; font-size: 20px;">로그인</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center; margin-top: 20px; font-size: 18px; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#findPW">비밀번호를 잊어버리셨나요?</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center; font-size: 18px;"><a href=#>계정이 없으신가요? 회원가입.</a></p>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				  </div>
+			</div>
+		</div>
 
-				  <!--모달 비밀번호 찾기 ------------------------------------------------------------------------------------->
-				<div class="modal" tabindex="-1" id="myModal1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" style="font-size: 40px; margin-left: 30%;">GAMEDORI</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<form>
-									<table>
-										<tr>
-											<td style="width: 500px;"><h5  style="margin-left: 170px;
-											margin-top: 20px; font-weight: bold;">비밀번호 찾기</h5></td>
-										</tr>
-										<tr>
-											<td><p style="text-align: center;">가입했던 이메일을 적어주세요 <br>입력하신 이메일주소로 비밀번호 변경메일을 보내드릴게요.</p></td>
-										</tr>
-										<tr>	
-											<td >
-												<div class="mb-3">
-												<input  style="margin-top: 20px;"type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
-											</div>
-											</td>
-										</tr>
-								
-										<tr>
-											<td><button type="button" class="btn btn-info" style="width: 460px; margin-top: 40px; margin-bottom: 50px;">이메일 보내기</button></td>
-										</tr>
-				
-									</table>
-								</form>
-							</div>
-						</div>
+		<!--모달 비밀번호 찾기 ------------------------------------------------------------------------------------->
+		<div class="modal" tabindex="-1" id="findPW">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="d-flex justify-content-end mt-3 me-3">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="">
+						<p class="text-center" id="logo">GAMEDORI</p>
+					</div>
+					<div class="modal-body">
+						<form>
+							<table>
+								<tr>
+									<td style="width: 500px;">
+										<h5 style="margin-left: 170px; margin-top: 20px; font-weight: bold;">비밀번호 찾기</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center;">가입했던 이메일을 적어주세요. <br>입력하신 이메일 주소로 비밀번호 변경 메일을 보내드릴게요.</p>
+									</td>
+								</tr>
+								<tr>	
+									<td >
+										<div class="mb-3">
+											<input style="margin-top: 20px;"type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-outline-light login" style="width: 460px; margin-top: 15px; font-weight: bold; font-size: 20px;">이메일 보내기</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="text-align: center; margin-top: 20px; font-size: 18px; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#login">로그인하러 가기</p>
+									</td>		
+								</tr>
+							</table>
+						</form>
 					</div>
 				</div>
-				
+			</div>
+		</div>				
 		  </header><!--End:header-->
 		  
 		  <div class="px-2 py-1">

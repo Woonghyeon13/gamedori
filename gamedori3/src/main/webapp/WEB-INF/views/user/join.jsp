@@ -87,57 +87,7 @@
 			}
 		});
 	 	
-	 	
-	 	<%--
-		$(function(){
-			//휴대폰 번호 인증var code2 = "";
-			var contextPath = '<%=request.getContextPath()%>';
-			
-			$("#phoneChk").click(function(){
-			    alert('인증번호 발송이 완료되었습니다.\n휴대폰에서 인증번호 확인을 해주십시오.');
-			    var phone = $("#phone").val();
-			    $.ajax({
-			        type:"POST", // post 형식으로 발송
-			        url:contextPath+"/user/phoneCheck.do?phone=" + phone, 
-			        data: {phone:phone}, // 전송할 데이터값
-			        cache : false,
-			        success:function(data){
-			            if(data == "error"){ //실패시 
-			                alert("휴대폰 번호가 올바르지 않습니다.")
-			            }else{            //성공시        
-			                alert("휴대폰 전송이  됨.")
-			                code2 = data; // 성공하면 데이터저장
-			            }
-			        }
-			        
-			    });
-			});
-			 
-			 
-			 
-			//휴대폰 인증번호 대조
-			  $("#phoneChk2").click(function(){
-			      if($("#phone2").val() == code2){ // 위에서 저장한값을 ㅣ교함
-			           alert('인증성공')
-			      }else{
-			          alert('인증실패')
-			      }
-			  });
-			 
-		});
-			 
-			 
-			 
-			//휴대폰 인증번호 대조
-			//휴대폰 인증번호 대조
-			  $("#phoneChk2").click(function(){
-			      if($("#phone2").val() == code2){ // 위에서 저장한값을 ㅣ교함
-			           alert('인증성공')
-			      }else{
-			          alert('인증실패')
-			      }
-			  });
-			   --%>
+	 
 			
 	</script>
 	
@@ -371,66 +321,6 @@
 				</div>
 			</div>
 		
-
-				<!-- 약정 -->
-				<div id="modify_inner2" class="mx-auto mt-4">
-					<div id="modify_left2">
-						<div class="accordion" id="accordionExample">
-							<div class="accordion-item">
-							  <h2 class="accordion-header" id="headingOne">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-										<label class="form-check-label" for="flexCheckDefault">
-										  [필수] 이용약관 동의
-										</label>
-									  </div>
-								</button>
-							  </h2>
-							  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-								  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-								</div>
-							  </div>
-							</div>
-							<div class="accordion-item">
-							  <h2 class="accordion-header" id="headingTwo">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-										<label class="form-check-label" for="flexCheckDefault">
-										  [필수] 개인정보 수집 및 이용 동의
-										</label>
-									  </div>
-								</button>
-							  </h2>
-							  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-								  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-								</div>
-							  </div>
-							</div>
-							<div class="accordion-item">
-							  <h2 class="accordion-header" id="headingThree">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-										<label class="form-check-label" for="flexCheckDefault">
-										  [선택] 정보 공개
-										</label>
-									  </div>
-								</button>
-							  </h2>
-							  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-								  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-								</div>
-							  </div>
-							</div>
-						</div>
-	
-					</div>  <!-- end:#modify_left2 -->
-				</div>  <!-- end:#mypage_inner -->
 
 
 			  <script>
