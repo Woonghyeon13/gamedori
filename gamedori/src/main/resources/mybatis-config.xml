@@ -5,7 +5,7 @@
 
 	<typeAliases>
         <!-- vo 별칭 정보 -->
-        <typeAlias type="game.dori.vo.BoardVO" alias="boardVO" />
+        <!-- <typeAlias type="game.dori.vo.BoardVO" alias="boardVO" /> -->
     </typeAliases>
 
 </configuration>
