@@ -48,7 +48,7 @@
 				<div class="text-end">
 					<ul class="d-flex flex-row mb-0 ps-0">
 						<li><button type="button" class="btn btn-outline-light login me-2" data-bs-toggle="modal" data-bs-target="#login">로그인</button></li>
-						<li><button type="button" class="btn btn-outline-light join me-2"><a href="#">회원가입</a></button></li>
+						<li><button type="button" class="btn btn-outline-light join me-2"><a href="user/join.do">회원가입</a></button></li>
 						<li><a href="#" class="nav-link me-2 mt-1 text-muted" title="장바구니"><i class="xi-cart-o xi-2x"></i></a></li>
 						<li><a href="#" class="nav-link mt-1 text-muted" title="찜 목록"><i class="xi-heart-o xi-2x jjim"></i></a></li>
 					</ul>

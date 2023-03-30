@@ -27,6 +27,8 @@
 	<context:component-scan base-package="game.dori.controller" />
 	<context:component-scan base-package="game.dori.service" />
 	<context:component-scan base-package="game.dori.dao" />
+	<context:component-scan base-package="game.dori.util" />
+	<context:component-scan base-package="game.dori.vo" />
 	
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver" />
 	
