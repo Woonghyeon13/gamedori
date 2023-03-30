@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.OrderDAO;
 
 @Service
-public class OrderServiceImpl {
+public class OrderServiceImpl implements OrderService{
 
 	@Autowired
 	private OrderDAO orderDAO;

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.WishlistDAO;
 
 @Service
-public class WishlistServiceImpl {
+public class WishlistServiceImpl implements WishlistService{
 
 	@Autowired
 	private WishlistDAO wishlistDAO;

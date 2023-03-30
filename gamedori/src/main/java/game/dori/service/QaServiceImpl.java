@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.QaDAO;
 
 @Service
-public class QaServiceImpl {
+public class QaServiceImpl implements QaService{
 
 	@Autowired
 	private QaDAO qaDAO;

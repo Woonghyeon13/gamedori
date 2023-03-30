@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.ProductADAO;
 
 @Service
-public class ProductAServiceImpl {
+public class ProductAServiceImpl implements ProductAService{
 
 	@Autowired
 	private ProductADAO productADAO;

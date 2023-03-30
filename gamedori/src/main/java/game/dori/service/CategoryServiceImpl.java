@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.CategoryDAO;
 
 @Service
-public class CategoryServiceImpl {
+public class CategoryServiceImpl implements CategoryService{
 
 	@Autowired
 	private CategoryDAO categoryDAO;

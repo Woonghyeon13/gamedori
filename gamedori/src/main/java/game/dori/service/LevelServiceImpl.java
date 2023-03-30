@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.LevelDAO;
 
 @Service
-public class LevelServiceImpl {
+public class LevelServiceImpl implements LevelService{
 
 	@Autowired
 	private LevelDAO levelDAO;

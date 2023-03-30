@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.PayDAO;
 
 @Service
-public class PayServiceImpl {
+public class PayServiceImpl implements PayService{
 
 	@Autowired
 	private PayDAO payDAO;

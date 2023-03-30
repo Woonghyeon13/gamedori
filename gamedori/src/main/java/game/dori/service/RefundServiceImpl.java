@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.RefundDAO;
 
 @Service
-public class RefundServiceImpl {
+public class RefundServiceImpl implements RefundService{
 
 	@Autowired
 	private RefundDAO refundDAO;

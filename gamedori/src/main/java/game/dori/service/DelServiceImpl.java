@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.DelDAO;
 
 @Service
-public class DelServiceImpl {
+public class DelServiceImpl implements DelService{
 
 	@Autowired
 	private DelDAO delDAO;

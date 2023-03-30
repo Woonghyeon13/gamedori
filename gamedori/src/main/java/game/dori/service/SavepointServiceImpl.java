@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.SavepointDAO;
 
 @Service
-public class SavepointServiceImpl {
+public class SavepointServiceImpl implements SavepointService{
 
 	@Autowired
 	private SavepointDAO savepointDAO;

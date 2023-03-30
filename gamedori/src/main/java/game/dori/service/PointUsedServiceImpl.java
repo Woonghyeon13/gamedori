@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.PointUsedDAO;
 
 @Service
-public class PointUsedServiceImpl {
+public class PointUsedServiceImpl implements PointUsedService{
 
 	@Autowired
 	private PointUsedDAO pointUsedDAO;

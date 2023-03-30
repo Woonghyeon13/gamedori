@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.ProductImgDAO;
 
 @Service
-public class ProductImgServiceImpl {
+public class ProductImgServiceImpl implements ProductImgService{
 
 	@Autowired
 	private ProductImgDAO productImgDAO;

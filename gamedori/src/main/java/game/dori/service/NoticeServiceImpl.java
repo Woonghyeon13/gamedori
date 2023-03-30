@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.NoticeDAO;
 
 @Service
-public class NoticeServiceImpl {
+public class NoticeServiceImpl implements NoticeService{
 
 	@Autowired
 	private NoticeDAO noticeDAO;

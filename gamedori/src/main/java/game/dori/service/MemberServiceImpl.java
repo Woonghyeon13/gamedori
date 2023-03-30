@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.MemberDAO;
 
 @Service
-public class MemberServiceImpl {
+public class MemberServiceImpl implements MemberService{
 
 	@Autowired
 	private MemberDAO memberDAO;

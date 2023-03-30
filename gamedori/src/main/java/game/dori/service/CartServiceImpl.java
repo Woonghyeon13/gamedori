@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import game.dori.dao.CartDAO;
 
 @Service
-public class CartServiceImpl {
+public class CartServiceImpl implements CartService{
 
 	@Autowired
 	private CartDAO cartDAO;
