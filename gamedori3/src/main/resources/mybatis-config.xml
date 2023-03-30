@@ -9,7 +9,6 @@
 		<typeAlias type="game.dori.vo.CART_VO" alias="cartVO" />
 		<typeAlias type="game.dori.vo.CATEGORY_VO" alias="categoryVO" />
 		<typeAlias type="game.dori.vo.DEL_VO" alias="delVO" />
-		<typeAlias type="game.dori.vo.LEVEL_VO" alias="levelVO" />
 		<typeAlias type="game.dori.vo.MEMBER_VO" alias="memberVO" />
 		<typeAlias type="game.dori.vo.NOTICE_VO" alias="noticeVO" />
 		<typeAlias type="game.dori.vo.ORDER_DETAIL_VO" alias="orderDetailVO" />

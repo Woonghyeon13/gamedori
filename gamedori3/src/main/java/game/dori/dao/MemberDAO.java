@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import game.dori.vo.LEVEL_VO;
+
 import game.dori.vo.MEMBER_VO;
 
 

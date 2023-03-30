@@ -7,6 +7,7 @@ public class QA_A_VO {
 	
   private String qa_a_reply ; //답글 텍스트 내용
   private int qa_tb_index;    //문의 인덱스
+  private int qa_a_idx;		  //qa 인덱스
 
 	 public String getQa_a_reply() {
 		return qa_a_reply;

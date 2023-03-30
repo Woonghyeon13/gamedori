@@ -15,7 +15,7 @@ import game.dori.vo.MEMBER_VO;
 
 @RequestMapping(value="/user")
 @Controller
-public class UserController {
+public class MemberController {
 	
 	@Autowired
 	private MemberService MemberService;
