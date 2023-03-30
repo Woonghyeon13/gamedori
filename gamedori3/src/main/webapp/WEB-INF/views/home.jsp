@@ -44,7 +44,7 @@
 	<header class="pt-4 pb-3 border-bottom border-2 mb-5">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-				<a href="#" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+				<a href="home.do" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
 					GAMEDORI
 				</a>
 				
@@ -173,7 +173,8 @@
 						<p class="text-center" id="logo">GAMEDORI</p>
 					</div>
 					<div class="modal-body">
-						<form>
+						
+					 <form action="util/searchPw.do" method="get">
 							<table>
 								<tr>
 									<td style="width: 500px;">
@@ -184,18 +185,21 @@
 									<td>
 										<p style="text-align: center;">가입했던 이메일을 적어주세요. <br>입력하신 이메일 주소로 비밀번호 변경 메일을 보내드릴게요.</p>
 									</td>
+									  
 								</tr>
 								<tr>	
 									<td >
 										<div class="mb-3">
-											<input style="margin-top: 20px;"type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+											<input style="margin-top: 20px;"type="email" class="form-control" id="email" name="email" placeholder="이메일을 입력하세요">
 										</div>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<button class="btn btn-outline-light login" style="width: 460px; margin-top: 15px; font-weight: bold; font-size: 20px;">이메일 보내기</button>
+											<p>'@'포함한 이메일주소를 정확히 입력해주세요.</p>
 									</td>
+								
 								</tr>
 								<tr>
 									<td>

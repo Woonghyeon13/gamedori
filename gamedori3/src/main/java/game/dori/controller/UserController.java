@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import game.dori.service.MemberService;
 import game.dori.vo.MEMBER_VO;
-import game.dori.Service.MemberService;
 
 @RequestMapping(value="/user")
 @Controller
@@ -83,7 +83,7 @@ public class UserController {
 		System.out.println("휴대폰 인증 요청 번호 : " + memberVO.getMember_phone());
 		
 		
-		return "/user/join";
+		return "/util/import";
 		
 	}
 	

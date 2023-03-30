@@ -1,4 +1,4 @@
-package game.dori.DAO;
+package game.dori.dao;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ import game.dori.vo.MEMBER_VO;
 
 
 @Repository
-public class MEMBER_DAO {
+public class MemberDAO {
 	
 	@Autowired
 	private SqlSession sqlSession;

@@ -32,8 +32,8 @@
 	
 	
 	<context:component-scan base-package="game.dori.controller" />
-	<context:component-scan base-package="game.dori.Service" />
-	<context:component-scan base-package="game.dori.DAO" />
+	<context:component-scan base-package="game.dori.service" />
+	<context:component-scan base-package="game.dori.dao" />
 	<context:component-scan base-package="game.dori.vo" />
 	<context:component-scan base-package="game.dori.util" />
 	

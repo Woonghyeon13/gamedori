@@ -102,7 +102,7 @@
 			
 			$.ajax({
 				type : 'get',
-				url : contextPath+"/user/PhoneCheck.do?member_phone="+phone, // GET방식이라 Url 뒤에 email을 뭍힐수있다.
+				url : contextPath+"/util/phoneCheck.do", // GET방식이라 Url 뒤에 email을 뭍힐수있다.
 				success : function (data) {
 					console.log("data : " +  data);
 					checkInput.attr('disabled',false);
@@ -141,7 +141,7 @@
 <header class="pt-4 pb-3 border-bottom border-2 mb-5">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-				<a href="#" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+				<a href="../home.do" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
 					GAMEDORI
 				</a>
 				
