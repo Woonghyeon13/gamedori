@@ -13,20 +13,20 @@
 				</div>
 				<div>
 					<ul id="product_menu">
-						<li><a href="#">전체</a></li>
-						<li><a href="#">하드웨어</a></li>
-						<li><a href="#">타이틀</a></li>
-						<li><a href="#">주변기기</a></li>
+						<li><a href="<c:url value='/.do'/>">전체</a></li>
+						<li><a href="<c:url value='/.do'/>">하드웨어</a></li>
+						<li><a href="<c:url value='/.do'/>">타이틀</a></li>
+						<li><a href="<c:url value='/.do'/>">주변기기</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="row mt-5">
 				<p class="col-6">Playstation4 카테고리에 총 xx개의 상품이있습니다.</p>
 				<ul class="col-6 d-flex justify-content-end product_sort">
-					<li id="li1"><a href="#" id="tag">높은가격순</a></li>
-					<li id="li1"><a href="#" id="tag">낮은가격순</a></li>
-					<li id="li1"><a href="#" id="tag">인기상품</a></li>
-					<li><a href="#" id="tag">최근순</a></li>
+					<li id="li1"><a href="<c:url value='/.do'/>" id="tag">높은가격순</a></li>
+					<li id="li1"><a href="<c:url value='/.do'/>" id="tag">낮은가격순</a></li>
+					<li id="li1"><a href="<c:url value='/.do'/>" id="tag">인기상품</a></li>
+					<li><a href="<c:url value='/.do'/>" id="tag">최근순</a></li>
 				</ul>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 				</li>
 
 				<li class="ms-1 me-1 mb-4" style="width: 200px;">
-					<a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
 						<div style="text-align: center;">
 							<img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -60,7 +60,7 @@
                 </li>
 
                 <li class="ms-1 me-1 mb-4" style="width: 200px;">
-                    <a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
                         <div style="text-align: center;">
                             <img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -73,7 +73,7 @@
                 </li>
 
                 <li class="ms-1 me-1 mb-4" style="width: 200px;">
-                    <a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
                         <div style="text-align: center;">
                             <img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -86,7 +86,7 @@
                 </li>
 
                 <li class="ms-1 me-1 mb-4" style="width: 200px;">
-                    <a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
                         <div style="text-align: center;">
                             <img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -99,7 +99,7 @@
                 </li>
 
                 <li class="ms-1 me-1 mb-4" style="width: 200px;">
-                    <a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
                         <div style="text-align: center;">
                             <img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -112,7 +112,7 @@
                 </li>
 
                 <li class="ms-1 me-1 mb-4" style="width: 200px;">
-                    <a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
                         <div style="text-align: center;">
                             <img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -125,7 +125,7 @@
                 </li>
 
                 <li class="ms-1 me-1 mb-4" style="width: 200px;">
-                    <a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
                         <div style="text-align: center;">
                             <img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -138,7 +138,7 @@
                 </li>
 
                 <li class="ms-1 me-1 mb-4" style="width: 200px;">
-                    <a href="#">
+					<a href="<c:url value='/prod/detail.do'/>">
                         <div style="text-align: center;">
                             <img src="<c:url value='/images/ps4 피파23_180x180.jpg' />" alt="...">
                             <div>
@@ -160,7 +160,7 @@
 		    <nav>
 		        <ul class="pagination">
 		            <li class="page-item">
-		                <a class="page-link text-reset" href="#" aria-label="Previous">
+		                <a class="page-link text-reset" href="<c:url value='/.do'/>" aria-label="Previous">
 		                <span aria-hidden="true">&laquo;</span>
 		                </a>
 		            </li>

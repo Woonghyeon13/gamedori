@@ -42,6 +42,13 @@ public class MemberController {
 		return "user/modify";
 	}
 	
+	// 회원탈퇴
+	@RequestMapping( value = "/withdraw.do", method = RequestMethod.GET )
+	public String withdraw()
+	{
+		return "user/withdraw";
+	}
+	
 	// 이메일 인증필요
 	@RequestMapping( value = "/emailcheck.do", method = RequestMethod.GET )
 	public String emailcheck()

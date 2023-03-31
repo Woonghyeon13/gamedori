@@ -22,7 +22,9 @@
 						<tbody>
 							<tr>
 								<td id="Check"><input type="checkbox" class="item"></td>
-								<td class="text-center align-middle"><a href="#"><img src="<c:url value='/images/ps4 피파23_180x180.jpg'/>"></a></td>
+								<!-- img url c태그 -->
+								<c:url value='/images/ps4 피파23_180x180.jpg' var="img"/>
+								<td class="text-center align-middle"><a href="<c:url value='/prod/detail.do' />"><img src="${img}"></a></td>
 								<td class="align-middle">
 									<ul class="list-unstyled mb-0 ps-2 pe-2">
 										<li><a href="#">PS4 피파23</a></li>
@@ -43,7 +45,7 @@
 
 							<tr>
 								<td id="Check"><input type="checkbox" class="item"></td>
-								<td class="text-center align-middle"><a href="#"><img src="<c:url value='/images/ps4 피파23_180x180.jpg'/>"></a></td>
+								<td class="text-center align-middle"><a href="<c:url value='/prod/detail.do' />"><img src="${img}"></a></td>
 								<td class="align-middle">
 									<ul class="list-unstyled mb-0 ps-2 pe-2">
 										<li><a href="#">PS4 피파23</a></li>

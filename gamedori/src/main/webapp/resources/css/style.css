@@ -89,6 +89,7 @@ main {
   /*오버레이 뒷배경*/
   /*버튼*/
   /*popup*/
+  /*별점*/
   /* 상품페이지 문의 답변 */
 }
 
@@ -764,3 +765,767 @@ footer {
   width: 100%;
   height: 200px;
 }
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*주원 공지사항*/
+.customer {
+  position: relative;
+}
+
+#customer_header {
+  position: absolute;
+  right: 33%;
+  margin-top: 50px;
+}
+
+#customer_header > h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#customer_header ul {
+  margin-top: 50px;
+}
+
+#customer_header ul li {
+  float: left;
+  margin-left: 60px;
+  margin-right: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.customer_main {
+  position: relative;
+  height: 1500px;
+}
+
+.table-hover {
+  position: absolute;
+  right: 16%;
+  top: 15%;
+}
+
+#customer_board_write {
+  position: absolute;
+  top: 62%;
+  right: 14%;
+}
+
+#customer_board_write1 {
+  position: absolute;
+  top: 68%;
+  right: 14%;
+}
+
+#customer_search {
+  position: absolute;
+  top: 62%;
+  left: 16%;
+}
+
+.form-control {
+  float: left;
+  margin-right: 10px;
+}
+
+#customer_search1 {
+  position: absolute;
+  top: 68%;
+  left: 16%;
+}
+
+#customer_board {
+  position: relative;
+  height: 1500px;
+}
+
+.table-hover {
+  position: absolute;
+  right: 14%;
+  top: 17%;
+}
+
+#customer_bottom_page {
+  position: absolute;
+  top: 85%;
+  left: 75%;
+}
+
+#customer_bottom_page > ul li {
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  margin-left: 7px;
+  background-color: #212122;
+  width: 50px;
+  height: 30px;
+  color: aliceblue;
+  padding-top: 5px;
+}
+
+/*주원 공지사항*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*건영 작업*/
+/* ↓↓↓↓↓ 마이페이지 상단 및 메뉴리스트 공통부분 ↓↓↓↓↓ */
+#mypage_inner {
+  margin: 0 auto;
+}
+
+#mypage_inner li {
+  list-style: none;
+}
+
+#mypage_inner h3 {
+  padding: 20px;
+  font-weight: bold;
+}
+
+#mypage_inner th {
+  font-weight: bold;
+}
+
+#mypage_1 {
+  border: 1px solid #e7e6e6;
+  margin: 10px 30px;
+}
+
+#mypage_1 h4 {
+  font-weight: bold;
+}
+
+#mypage_1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+#mypage_1 li {
+  border-right: 1px solid #e7e6e6;
+  float: left;
+  width: 24%;
+  margin: 0 1%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#mypage_1 li:nth-child(4) {
+  border-right: 0px;
+}
+
+#mypage_1 p {
+  font-size: 15px;
+  color: #000;
+}
+
+#mypage_1 a {
+  font-size: 13px;
+  color: gray;
+}
+
+#mypage_inner2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+#mypage_list {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#mypage_list span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#mypage_list li {
+  margin: 10px 50px;
+}
+
+#nickname {
+  padding: 10px 50px;
+}
+
+#ol_li a {
+  color: #192773;
+}
+
+#mypage_inner table th, td {
+  text-align: center;
+}
+
+#paging {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ------------- 마이페이지 클릭 시 첫 화면 ------------- */
+#mypage_inner2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+#detail_inner div {
+  margin-top: 30px;
+}
+
+#detail_inner td {
+  text-decoration: none;
+}
+
+#product_page p {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#product {
+  clear: both;
+  border: 1px solid #e7e6e6;
+}
+
+#product td {
+  text-align: center;
+}
+
+#breakdown1 {
+  text-align: center;
+}
+
+#enquiry_page p {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#enquiry {
+  clear: both;
+  border: 1px solid #e7e6e6;
+}
+
+#enquiry td {
+  text-align: center;
+}
+
+#breakdown2 {
+  text-align: center;
+}
+
+#one_to_one_page p {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#one_to_one {
+  clear: both;
+  border: 1px solid #e7e6e6;
+}
+
+#one_to_one td {
+  text-align: center;
+}
+
+#breakdown3 {
+  text-align: center;
+}
+
+#review_page p {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#review {
+  clear: both;
+  border: 1px solid #e7e6e6;
+}
+
+#review td {
+  text-align: center;
+}
+
+#breakdown4 {
+  text-align: center;
+}
+
+/* ------------- 마이페이지 적립금 확인 -------------*/
+#s_money_inner {
+  margin-bottom: 30px;
+}
+
+#s_money_inner strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#s_money_t {
+  clear: both;
+}
+
+#s_money_t td {
+  text-align: center;
+}
+
+#money_contents {
+  margin-top: 50px;
+}
+
+#money_contents li {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  font-weight: bold;
+  text-align: center;
+  color: gray;
+}
+
+#use_money li {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ------------- 마이페이지 쿠폰 확인 -------------*/
+#coupon_inner {
+  margin-bottom: 30px;
+}
+
+#coupon_inner strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#coupon_t {
+  clear: both;
+}
+
+#coupon_t td {
+  text-align: center;
+}
+
+/* ------------- 마이페이지 후기 확인 -------------*/
+#review_inner {
+  margin-bottom: 30px;
+}
+
+#review_inner:first-child span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#review_inner button {
+  border: 1px solid #d9d9d9;
+}
+
+#review_t {
+  clear: both;
+}
+
+#review_t td {
+  text-align: center;
+}
+
+#review_t table {
+  width: auto;
+  border-top: 1px solid #000;
+}
+
+#review_t #ul1 {
+  background: #000;
+  color: #fff;
+}
+
+#review_t li {
+  display: inline-block;
+  width: 17%;
+  margin: 0 1%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ------------- 마이페이지 주문상품 전체보기 -------------*/
+#product_inner strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#product_t {
+  clear: both;
+}
+
+#product_t td {
+  text-align: center;
+}
+
+/* ------------- 마이페이지 상품문의 전체보기 -------------*/
+#enquiry_inner strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#enquiry_t {
+  clear: both;
+}
+
+#enquiry_t td {
+  text-align: center;
+}
+
+/* ------------- 마이페이지 1 : 1 문의 전체보기 -------------*/
+#one_to_one_inner strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#one_to_one_t {
+  clear: both;
+}
+
+#one_to_one_t td {
+  text-align: center;
+}
+
+/* ------------- 마이페이지 탈퇴하기 -------------*/
+#unregister_inner {
+  margin: 0 0 30px 70px;
+  border: 1px solid #e7e6e6;
+}
+
+#logo_img {
+  float: left;
+  padding: 200px 50px;
+}
+
+#logo_img img {
+  text-align: center;
+}
+
+#unre_input {
+  float: right;
+  padding: 70px 0 0 70px;
+  text-align: center;
+}
+
+#unre_input input {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#unre_input #a {
+  font-size: 15px;
+  color: #a6a6a6;
+}
+
+#unre_input #unre {
+  color: red;
+}
+
+#unre_input #id {
+  color: green;
+}
+
+#unre_input button {
+  width: 300px;
+}
+
+/* ------------- 주문 상세조회 -------------*/
+#detail_inner2 {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #e7e6e6;
+}
+
+#detail_inner2 #close_btn {
+  float: right;
+  padding: 20px;
+}
+
+#detail_inner2 h4 {
+  text-align: center;
+  padding: 20px;
+}
+
+#o_number {
+  display: inline-block;
+}
+
+#o_number p {
+  float: left;
+  clear: both;
+}
+
+#o_number button {
+  float: right;
+  margin-left: 10px;
+}
+
+#product2 {
+  display: inline-block;
+  margin: 30px auto;
+}
+
+#product2 img {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+#product2 button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#product2 p {
+  font-size: 15px;
+}
+
+#product2 span {
+  font-size: 10px;
+  color: gray;
+}
+
+#product2 #p_left {
+  float: left;
+}
+
+#product2 #p_right {
+  float: right;
+}
+
+#addr_info {
+  margin: 30px auto;
+}
+
+#addr_info #addr_ th, td {
+  border-bottom: 0px;
+}
+
+#addr_ strong, span {
+  font-size: 15px;
+}
+
+#addr_ th, td {
+  text-align: left;
+}
+
+#pay_money {
+  margin: 30px auto;
+  clear: both;
+}
+
+#pay_detail {
+  padding: 30px auto;
+}
+
+#check_btn button {
+  margin: 20px auto;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* ------------- 배송 조회 -------------*/
+#delivery_check {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#d_list {
+  text-overflow: ellipsis;
+}
+
+#d_list span {
+  font-size: 15px;
+}
+
+#d_list p:first-child {
+  font-size: 13px;
+}
+
+#d_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#d_list li {
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#d_list li:last-child {
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+#d_list img {
+  width: 100px;
+  height: auto;
+}
+
+#post_num {
+  margin: 20px auto;
+  clear: both;
+}
+
+#post_num li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#post_num span {
+  margin-right: 20px;
+}
+
+#enquiry2 {
+  margin: 50px auto;
+}
+
+#enquiry2 img {
+  width: 45px;
+  text-align: center;
+}
+
+#enquiry2 button {
+  width: auto;
+  height: auto;
+  float: right;
+  border: 0px;
+  margin-left: 10px;
+}
+
+#enquiry2 p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#enquiry2 li:first-child {
+  float: left;
+}
+
+#enquiry2 li:nth-child(2) {
+  float: left;
+  padding-left: 20px;
+}
+
+#enquiry2 li:first-child img {
+  width: 100px;
+  height: auto;
+}
+
+#accordion {
+  clear: both;
+  padding-top: 30px;
+}
+
+#accordion h5 {
+  font-weight: bold;
+}
+
+#detail_inner2 #head h4 {
+  text-align: center;
+  padding: 20px;
+}
+
+#order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#order span {
+  float: left;
+}
+
+#cash_receipt ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#cash_receipt button {
+  width: 100%;
+  height: auto;
+}
+
+#p_info img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+#p_info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#p_info button {
+  width: 100%;
+  height: auto;
+}
+
+#receipt_guide p:nth-child(2) {
+  color: green;
+}
+
+#p_receipt td {
+  text-align: left;
+  border-bottom: 0px;
+}
+
+#p_receipt th {
+  text-align: left;
+  border-bottom: 0px;
+}
+
+#p_receipt strong {
+  float: left;
+  text-align: right;
+}
+
+#explain {
+  clear: both;
+}
+
+#explain p {
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+}
+
+#ready {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
+/*건영 작업*/
+/*//////////////////////////////////////////////////////////////////////*/

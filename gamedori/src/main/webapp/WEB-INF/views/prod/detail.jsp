@@ -8,7 +8,7 @@
 		<div class="container mt-5">
 			<div class="row">
 				<div class="col-7">
-					<img class="border" src="images/playstaytion5/피파23 ps5_600x600.jpg">
+					<img class="border" src="<c:url value='/images/피파23 ps5_600x600.jpg' />">
 				</div>
 				<div class="col-5">
 					<div class="container">
@@ -155,7 +155,7 @@
 			</ul>
 			<!--상세 사진 영역-->
 			<div class="container d-flex justify-content-center mt-3">
-				<img src="images/playstaytion5/피파23_PS5_상세.jpg" alt="">
+				<img src="<c:url value='/images/피파23_PS5_상세.jpg' />" alt="">
 			</div>
 		</div>
 		<!-- 배송안내 -->
@@ -174,7 +174,7 @@
 			<!--배송 안내 사진 영역-->
 			<div class="container">
 				<div class="container d-flex justify-content-center mt-3">
-					<img src="images/겜우리 합배송 관련 주의사항.jpg" alt="">
+					<img src="<c:url value='/images/겜우리 합배송 관련 주의사항.jpg' />" alt="">
 				</div>
 			</div>
 		</div>
@@ -207,9 +207,9 @@
 				<tr>
 					<td class="ps-3" colspan="3" style="text-align: left;"><span
 						class="fw-bold fs-4">title</span> <br> 내용 <br> <img
-						src="images/GU1vXFJpbzGYNV6UN3U0Cnnb.jpg" class="me-3 mt-3"
+						src="<c:url value='/images/GU1vXFJpbzGYNV6UN3U0Cnnb.jpg' />" class="me-3 mt-3"
 						style="border-radius: 6px;" alt="" width="100px" height="100px">
-						<img src="images/GU1vXFJpbzGYNV6UN3U0Cnnb.jpg" class="me-3 mt-3"
+						<img src="<c:url value='/images/GU1vXFJpbzGYNV6UN3U0Cnnb.jpg' />" class="me-3 mt-3"
 						style="border-radius: 6px;" alt="" width="100px" height="100px">
 					</td>
 				</tr>
