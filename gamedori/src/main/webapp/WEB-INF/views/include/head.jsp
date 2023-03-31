@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 	<!--자바스크립트-->
 	<script src="<c:url value='/resources/js/script.js'/>"></script>
-	
+	dfdf
 </head>
 <body>
 	<header class="pt-4 pb-3 border-bottom border-2 mb-5">
