@@ -94,8 +94,8 @@ window.onload = function () {
 			placement: 'top',
 			'content':'장바구니에 담았습니다!',
 			delay: {
-				"show": 500,
-				"hide": 200
+				"show": 200,
+				"hide": 1000
 			}
 		});
 
@@ -103,10 +103,10 @@ window.onload = function () {
 
 			setTimeout(function () {
 				$('.popover').fadeOut('slow');
-			}, 3000);
-
+			}, 1000);
 		});
 
 	});
 	//주원 전체선택, 팝오버
+
 }

@@ -12,7 +12,7 @@ public class MemberDAO {
 	@Autowired
 	private SqlSession sqlSession;
 	
-	private static String namespace = "game.dori.mapper.MemberMapper.";
+	private static String namespace = "game.dori.mapper.memberMapper.";
 	
 	public MEMBER_VO selectByBno(int member_idx)
 	{

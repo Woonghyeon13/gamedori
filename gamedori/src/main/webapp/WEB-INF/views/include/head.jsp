@@ -6,35 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>겜도리</title>
 	<!--파비콘-->
-	<link href="images/f.png" rel="shortcut icon">
-	
+	<link href="<c:url value='/resources/images/f.png'/>" rel="shortcut icon">
 	<!-- 스타일 시트 연결 -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" href="<c:url value='/resources/css/reset.css'/>" >
+	<link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>" >
 	<!-- 부트스트랩 -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-	
 	<!-- 폰트 -->
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-
 	<!--jquery-->
 	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-
 	<!--xeicon-->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
 	<!--자바스크립트-->
-	<script src="js/script.js"></script>
+	<script src="<c:url value='/resources/js/script.js'/>"></script>
+	
 </head>
 <body>
 	<header class="pt-4 pb-3 border-bottom border-2 mb-5">
 		<div class="container">
 			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-				<a href="#" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+				<a href="<c:url value='/'/>" id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
 					GAMEDORI
 				</a>
 				
@@ -48,14 +43,15 @@
 				<div class="text-end">
 					<ul class="d-flex flex-row mb-0 ps-0">
 						<li><button type="button" class="btn btn-outline-light login me-2" data-bs-toggle="modal" data-bs-target="#login">로그인</button></li>
-						<li><button type="button" class="btn btn-outline-light join me-2"><a href="user/join.do">회원가입</a></button></li>
-						<li><a href="#" class="nav-link me-2 mt-1 text-muted" title="장바구니"><i class="xi-cart-o xi-2x"></i></a></li>
-						<li><a href="#" class="nav-link mt-1 text-muted" title="찜 목록"><i class="xi-heart-o xi-2x jjim"></i></a></li>
+						<li><button type="button" class="btn btn-outline-light join me-2"><a href="<c:url value='/user/join.do'/>">회원가입</a></button></li>
+						<li><a href="<c:url value='/mypage/cart.do'/>" class="nav-link me-2 mt-1 text-muted" title="장바구니"><i class="xi-cart-o xi-2x"></i></a></li>
+						<li><a href="<c:url value='/mypage/wishlist.do'/>" class="nav-link mt-1 text-muted" title="찜 목록"><i class="xi-heart-o xi-2x jjim"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-
+	
+		<!-- 내비게이션 -->
 		<div class="container">
 			<div class="d-flex justify-content-center py-3">
 				<ul class="nav nav-pills">
@@ -76,7 +72,7 @@
 							<li><a class="dropdown-item mt-1" type="button">주변기기</a></li>
 						</ul>
 					</li>
-					<li class="nav-item dropdown"><a href="#" class="nav-link" style="color: black;">PlayStation 4</a>
+					<li class="nav-item dropdown"><a href="<c:url value='/prod/list.do'/>" class="nav-link" style="color: black;">PlayStation 4</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" type="button">하드웨어</a></li>
 							<li><a class="dropdown-item mt-1" type="button">타이틀</a></li>
@@ -101,7 +97,7 @@
 		</div>
 
 		<!--모달 로그인--------------------------------------------------------------------------------------->
-		<div class="modal" tabindex="-1" id="login">
+		<div class="modal fade" tabindex="-1" id="login">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="d-flex justify-content-end mt-3 me-3">
@@ -153,7 +149,7 @@
 		</div>
 
 		<!--모달 비밀번호 찾기 ------------------------------------------------------------------------------------->
-		<div class="modal" tabindex="-1" id="findPW">
+		<div class="modal fade" tabindex="-1" id="findPW">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="d-flex justify-content-end mt-3 me-3">

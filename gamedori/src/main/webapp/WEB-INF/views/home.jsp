@@ -82,7 +82,6 @@
 				<div class="col"><a href="#"><img src="./images/HOT4.webp"></a></div>
 				<div class="col"><a href="#"><img src="./images/HOT5.webp"></a></div>
 				</div>
-				<a href="#"><p class="text-white">더보기</p></a>
 
 				<h3>예약</h3>
 				<div class="row row-cols-5">
@@ -99,7 +98,7 @@
 					<div id="index_3_C" class="row row-cols-4 mx-auto text-center">
 						<div class="col"><a href="#"><img src="./images/C_1.png"></a><br/>Nintendo Switch</div>
 						<div class="col"><a href="#"><img src="./images/C_2.png"></a><br/>PlayStation5</div>
-						<div class="col"><a href="#"><img src="./images/c_3.png"></a><br/>PlayStation4</div>
+						<div class="col"><a href="<c:url value='/prod/list.do'/>"><img src="./images/c_3.png"></a><br/>PlayStation4</div>
 						<div class="col"><a href="#"><img src="./images/C_4.png"></a><br/>XBOX</div>
 					</div>
 				</section>
