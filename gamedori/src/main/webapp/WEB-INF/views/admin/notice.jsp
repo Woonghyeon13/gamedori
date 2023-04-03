@@ -76,7 +76,7 @@
 				<div class="modal-content">
 					<div class="modal-header d-flex flex-column logo">
 						<div class="mt-2">
-							<h4 class="modal-title fs-5">상품 등록</h4>
+							<h4 class="modal-title fs-5">공지사항 등록</h4>
 						</div>
 					</div>
 					<div class="modal-body">

@@ -2,145 +2,160 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="../include/head.jsp" %>
 
-
 <main>
 
-	<div class="customer">
-		<div id="customer_header">
-			<h2>고객센터</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2>고객센터</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="d-flex justify-content-center py-3">
 			<ul class="nav nav-tabs">
 				<li class="nav-item"><a style="color: black;"
-					class="nav-link active" href="<c:url value='/customersc/main.do'/>"> 공지사항</a></li>
+					class="nav-link active" href="<c:url value='/customersc/main.do' />"> 공지사항</a></li>
 				<li class="nav-item"><a style="color: black;" class="nav-link"
-					href="<c:url value='/customersc/main.do'/>"> 1:1문의하기</a></li>
-				<li class="nav-item"><a style="color: black;" class="nav-link"
-					href="<c:url value='/customersc/main.do'/>"> Q&A</a></li>
+					href="<c:url value='/customersc/faq.do' />"> 자주 묻는 질문</a></li>
+			</ul>
 		</div>
-		<div class="customer_main">
-			<table class="table table-hover"
-				style="width: 70%; border-top: 1px solid black;">
-				<thead>
-					<tr>
-						<th>번호</th>
-						<th>제목</th>
-						<th>작성자</th>
-						<th>조회수</th>
-						<th>날짜</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td><a href="<c:url value='/customersc/view.do' />">첫번째 공지사항입니다</a></td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>첫번째 공지사항입니다</td>
-						<td>관리자</td>
-						<td>1억회</td>
-						<td>2023.03.15</td>
-					</tr>
-				</tbody>
+	</div>
+	<div class="container">
+		<table class="table table-hover" style="border-top: 1px solid black;">
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>조회수</th>
+					<th>날짜</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>첫번째 공지사항입니다</td>
+					<td>관리자</td>
+					<td>1억회</td>
+					<td>2023.03.15</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div>
+			<table>
+				<tr>
+					<td>
+						<form>
+							<input class="form-control" style="width: 300px;" type="text"
+								aria-label="default input example">
+						</form>
+
+					</td>
+					<td>
+						<button type="button" class="btn btn-dark">검색</button>
+					</td>
+				</tr>
 			</table>
-			<form id="customer_search">
-				<input class="form-control" style="width: 300px;" type="text"
-					aria-label="default input example">
-				<button type="button" class="btn btn-dark">검색</button>
-			</form>
 		</div>
 
 
@@ -149,7 +164,4 @@
 
 
 </main>
-
-
-
 <%@ include file="../include/foot.jsp" %>

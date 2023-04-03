@@ -22,4 +22,11 @@ public class CustomerscController {
 	{
 		return "customersc/view";
 	}
+	
+	// 자주 묻는 질문
+	@RequestMapping( value = "/faq.do", method = RequestMethod.GET )
+	public String faq()
+	{
+		return "customersc/faq";
+	}
 }

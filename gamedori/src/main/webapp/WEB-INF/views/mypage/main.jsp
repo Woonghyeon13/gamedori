@@ -3,9 +3,8 @@
 <%@ include file="../include/head.jsp" %>
 <main>
 	<!-- 마이페이지 클릭 시 첫 화면 ------------------------------------------------------------------------------------------------->
-	<div class="container mypage_inner">
+	<div id="mypage_inner" class="container">
 		<h3>마이페이지</h3>
-
 		<div id="mypage_1" class="col">
 			<ul>
 				<li>
@@ -14,16 +13,16 @@
 				</li>
 				<li>
 					<h4>적립금</h4>
-					<p>적립금 표시 ex) 2500원</p> <a href="<c:url value='/mypage/point.do'/>">적립금 확인 > </a>
+					<p>적립금 표시 ex) 2500원</p> <a href="<c:url value='/mypage/point.do' />">적립금 확인 > </a>
 					<!--s_money_check.html -->
 				</li>
 				<li>
 					<h4>쿠폰</h4>
-					<p>쿠폰 개수 표시</p> <a href="<c:url value='/mypage/coupon.do'/>">쿠폰 확인 > </a> <!-- coupon_check.html -->
+					<p>쿠폰 개수 표시</p> <a href="<c:url value='/mypage/coupon.do' />">쿠폰 확인 > </a> <!-- coupon_check.html -->
 				</li>
 				<li>
 					<h4>나의 후기</h4>
-					<p>후기 개수 표시</p> <a href="<c:url value='/mypage/reviewlist.do'/>">후기 확인 > </a> <!-- review_list.html -->
+					<p>후기 개수 표시</p> <a href="<c:url value='/mypage/reviewlist.do' />">후기 확인 > </a> <!-- review_list.html -->
 				</li>
 			</ul>
 		</div>
@@ -35,14 +34,14 @@
 				</p>
 
 				<ol id="ol_li" class="list-group list-group-numbered">
-					<li class="list-group-item"><a href="<c:url value='/mypage/cart.do'/>">장바구니</a></li>
-					<li class="list-group-item"><a href="<c:url value='/mypage/prodqa.do'/>">상품문의</a></li>
-					<li class="list-group-item"><a href="<c:url value='/mypage/oto.do'/>">1 : 1문의</a></li>
-					<li class="list-group-item"><a href="<c:url value='/mypage/rivew.do'/>">나의
+					<li class="list-group-item"><a href="<c:url value='/mypage/cart.do' />">장바구니</a></li>
+					<li class="list-group-item"><a href="<c:url value='/mypage/prodqa.do' />">상품문의</a></li>
+					<li class="list-group-item"><a href="<c:url value='/mypage/oto.do' />">1 : 1문의</a></li>
+					<li class="list-group-item"><a href="<c:url value='/mypage/reviewlist.do' />">나의
 							후기</a></li>
 					<!-- review_list.html -->
-					<li class="list-group-item"><a href="<c:url value='/user/modify.do'/>">회원정보수정</a></li>
-					<li class="list-group-item"><a href="<c:url value='/user/withdraw.do'/>">탈퇴하기</a></li>
+					<li class="list-group-item"><a href="<c:url value='/user/modify.do' />">회원정보수정</a></li>
+					<li class="list-group-item"><a href="<c:url value='/user/withdraw.do' />">탈퇴하기</a></li>
 					<!-- unregister.html -->
 				</ol>
 			</div>
@@ -68,7 +67,7 @@
 								<tbody>
 									<tr>
 										<th>1</th>
-										<td><a href="<c:url value='/mypage/orderdetail.do'/>">게임 1</a></td>
+										<td>게임 1</td>
 										<td>2023-03-08</td>
 										<td>12345678</td>
 										<td>10000원</td>
@@ -101,7 +100,7 @@
 								</tbody>
 							</table>
 							<p id="breakdown1">
-								<a href="<c:url value='/mypage/prodlist.do'/>">...더보기</a>
+								<a href="<c:url value='/mypage/prodlist.do' />">...더보기</a>
 							</p>
 							<!-- product_list.html -->
 						</div>
@@ -160,7 +159,7 @@
 								</tbody>
 							</table>
 							<p id="breakdown1">
-								<a href="<c:url value='/mypage/oto.do'/>">...더보기</a>
+								<a href="<c:url value='/mypage/prodqa.do' />">...더보기</a>
 							</p>
 							<!-- enquiry_list.html -->
 						</div>
@@ -221,7 +220,7 @@
 								</tbody>
 							</table>
 							<p id="breakdown1">
-								<a href="<c:url value='/mypage/oto.do'/>">...더보기</a>
+								<a href="<c:url value='/mypage/oto.do' />">...더보기</a>
 							</p>
 							<!-- one_to_one_list.html -->
 						</div>
@@ -281,7 +280,7 @@
 								</tbody>
 							</table>
 							<p id="breakdown1">
-								<a href="<c:url value='/mypage/oto.do'/>">...더보기</a>
+								<a href="<c:url value='/mypage/reviewlist.do' />">...더보기</a>
 							</p>
 							<!-- review_list.html -->
 						</div>
@@ -296,6 +295,5 @@
 
 </main>
 <!-- end : main ----------------------->
-
 
 <%@ include file="../include/foot.jsp" %>
