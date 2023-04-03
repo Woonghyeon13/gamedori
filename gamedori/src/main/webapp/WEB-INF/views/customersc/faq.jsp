@@ -48,7 +48,7 @@
 				aria-labelledby="flush-headingTwo"
 				data-bs-parent="#accordionFlushExample">
 				<div class="accordion-body">회원정보 수정에서 휴대폰본인확인후 안되시면 고객님 휴대폰
-					통신사로 문의부탁드립니다</div>
+					통신사로 문의부탁드립니다.</div>
 			</div>
 		</div>
 
