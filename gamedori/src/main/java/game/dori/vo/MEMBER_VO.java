@@ -14,8 +14,6 @@ public class MEMBER_VO {
 	private String member_name; //회원 이름
 	private int member_email_yn;  //이메일 인증여부  1:Y 2:N
 	private String member_email_key; //이메일인증키
-	private int member_phone_yn;  //핸드폰 인증여부 1:Y 2:N
-	private String member_phone_key; //핸드폰인증키
 	
 	public int getMember_email_yn() {
 		return member_email_yn;
@@ -28,18 +26,6 @@ public class MEMBER_VO {
 	}
 	public void setMember_email_key(String member_email_key) {
 		this.member_email_key = member_email_key;
-	}
-	public int getMember_phone_yn() {
-		return member_phone_yn;
-	}
-	public void setMember_phone_yn(int member_phone_yn) {
-		this.member_phone_yn = member_phone_yn;
-	}
-	public String getMember_phone_key() {
-		return member_phone_key;
-	}
-	public void setMember_phone_key(String member_phone_key) {
-		this.member_phone_key = member_phone_key;
 	}
 	public int getMember_idx() {
 		return member_idx;

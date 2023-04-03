@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="../include/head.jsp" %>
+<script>
+	function category_select({
+		
+	});
+	
+</script>
 <main>
 	<div class="container d-flex justify-content-center mt-2">
 		<h3 class="fw-bold">관리자 페이지</h3>
@@ -270,18 +276,23 @@
 					<div class="modal-body">
 						<form name="review" method="post" action="loginAction.jsp">
 							<div class="form-group d-flex justify-content-around">
-								<select class="form-select form-select-sm"
+								<select name="category_select1" class="form-select form-select-sm"
 									aria-label=".form-select-sm example">
 									<option selected>1차 카테고리</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select> <select class="form-select form-select-sm"
+									<option value="100">닌텐도</option>
+									<option value="200">PS5</option>
+									<option value="300">PS4</option>
+									<option value="400">XBOX</option>
+									<option value="500">굿즈</option>
+								</select> <select name="category_select2" class="form-select form-select-sm"
 									aria-label=".form-select-sm example">
 									<option selected>2차 카테고리</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
+									<c:if test="${category_select1 eq 100}">
+										<option value="1">하드웨어</option>
+										<option value="2">타이틀</option>
+										<option value="3">주변기기</option>
+										<option value="3">아미보</option>
+									</c:if>
 								</select>
 							</div>
 							<div
@@ -323,6 +334,11 @@
 							<div
 								class="form-group mt-2 d-flex justify-content-between align-items-center">
 								성인등급 여부 <input name="adultyn" type="radio" value="1">Y <input
+									name="adultyn" type="radio" value="2">N
+							</div>
+							<div
+								class="form-group mt-2 d-flex justify-content-between align-items-center">
+								예약상품 여부 <input name="adultyn" type="radio" value="1">Y <input
 									name="adultyn" type="radio" value="2">N
 							</div>
 							<div class="form-group mt-2">

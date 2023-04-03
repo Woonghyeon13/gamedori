@@ -24,6 +24,7 @@
 								<td id="Check"><input type="checkbox" class="item"></td>
 								<!-- img url c태그 -->
 								<c:url value='/images/ps4 피파23_180x180.jpg' var="img"/>
+								<c:url value='/prod/detail.do.jpg' var="prod"/>
 								<td class="text-center align-middle"><a href="<c:url value='/prod/detail.do' />"><img src="${img}"></a></td>
 								<td class="align-middle">
 									<ul class="list-unstyled mb-0 ps-2 pe-2">

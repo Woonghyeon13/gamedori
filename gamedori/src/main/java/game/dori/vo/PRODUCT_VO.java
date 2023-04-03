@@ -17,8 +17,14 @@ public class PRODUCT_VO {
 	private String prod_opt;			// 제품 옵션
 	private String prod_rdate;			// 출시 일
 	private int prod_rating;			// 성인 등급 여부	 [ 1: 일반 / 2 : 성인등급 ]
+	private int prod_reserv;			// 예약 판매 여부
 	
-	
+	public int getProd_reserv() {
+		return prod_reserv;
+	}
+	public void setProd_reserv(int prod_reserv) {
+		this.prod_reserv = prod_reserv;
+	}
 	public int getProd_idx() {
 		return prod_idx;
 	}

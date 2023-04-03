@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import game.dori.vo.PRODUCT_VO;
+
 @RequestMapping( value = "/admin" )
 @Controller
 public class AdminController {
@@ -18,6 +20,12 @@ public class AdminController {
 	@RequestMapping( value = "/prod.do", method = RequestMethod.GET )
 	public String prod(){
 		return "admin/prod";
+	}
+	
+	// 상품관리
+	@RequestMapping( value = "/prod.do", method = RequestMethod.POST )
+	public String prod( PRODUCT_VO vo ){
+		return "";
 	}
 
 	// 반품관리
