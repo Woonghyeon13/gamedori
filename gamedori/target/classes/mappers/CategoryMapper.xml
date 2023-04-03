@@ -5,4 +5,9 @@
  
 <mapper namespace="game.dori.mapper.categoryMapper">
 
+	<!-- 카테고리 호출 -->
+	<select id="category" resultType="game.dori.vo.CATEGORY_VO">
+		select cate_code, cate_name, cate_refcode from category_tb
+			start with cate_refcode in connect by prior cate_code = cate_refcode;
+	</select>
 </mapper>
