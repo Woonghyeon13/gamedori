@@ -21,3 +21,4 @@ https://kuzuro.blogspot.com/search/label/%28%EA%B5%AC%EB%B2%84%EC%A0%84%29%20%EC
 
 https://kuzuro.blogspot.com/2018/10/13.html
 -----------------
+https://www.youtube.com/watch?v=IT41djAKUgg&ab_channel=udrofficial 깃허브영상
